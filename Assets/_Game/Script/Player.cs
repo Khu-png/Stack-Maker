@@ -1,7 +1,11 @@
+using System;
 using System.Collections.Generic;
+using System.Numerics;
 using System.Security;
 using Unity.VisualScripting;
 using UnityEngine;
+using Quaternion = UnityEngine.Quaternion;
+using Vector3 = UnityEngine.Vector3;
 
 
 public class Player : MonoBehaviour
@@ -11,8 +15,9 @@ public class Player : MonoBehaviour
     [SerializeField] private Transform  model;
     [SerializeField] private float nextBrickY;
     
-    private Vector3 direction;
-    private bool isMoving = false;
+    private Vector3 startPosition;
+    public Vector3 direction;
+    public bool isMoving = false;
     private List<Transform> bricks = new List<Transform>();
     
     void  Start()
@@ -24,26 +29,7 @@ public class Player : MonoBehaviour
     {
         if (!isMoving)
         {
-            if (Input.GetKeyDown(KeyCode.W))
-            {
-                isMoving = true;
-                direction = Vector3.forward;
-            }
-            else if (Input.GetKeyDown(KeyCode.S))
-            {
-                isMoving = true;
-                direction = Vector3.back;
-            }
-            else if (Input.GetKeyDown(KeyCode.A))
-            {
-                isMoving = true;
-                direction = Vector3.left;
-            }
-            else if (Input.GetKeyDown(KeyCode.D))
-            {
-                isMoving = true;
-                direction = Vector3.right;
-            }
+            HandleInput();
         }
     }
 
@@ -54,7 +40,43 @@ public class Player : MonoBehaviour
             rb.linearVelocity = new Vector3(direction.x * speed, 0f, direction.z * speed);
         }
     }
+    
+    public void HandleInput()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            startPosition = Input.mousePosition;
+        }
 
+        if (Input.GetMouseButtonUp(0))
+        {
+            Vector3 endPosition = Input.mousePosition;
+
+            Vector3 delta = endPosition - startPosition;
+
+            float deltaX = Mathf.Abs(delta.x);
+            float deltaY = Mathf.Abs(delta.y);
+
+            if (Math.Abs(deltaX - deltaY) < 10f)
+            {
+                return;
+            }
+            
+            isMoving = true;
+            
+            if (deltaX > deltaY)
+            {
+                if (delta.x > 0) direction = Vector3.right;
+                else if (delta.x < 0) direction = Vector3.left;
+            }
+            else
+            {
+                if (delta.y > 0) direction = Vector3.forward;
+                else if (delta.y < 0) direction = Vector3.back;
+            }
+        }
+    }
+    
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "wall")
@@ -71,6 +93,8 @@ public class Player : MonoBehaviour
         brick.localRotation = Quaternion.identity;
         
         brick.localPosition = new Vector3(0, nextBrickY - 1.7f, 0);
+
+        brick.localScale = Vector3.one;
         
         bricks.Add(brick);
         

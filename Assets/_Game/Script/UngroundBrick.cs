@@ -17,6 +17,7 @@ public class UnroundBrick : MonoBehaviour
 
                 if (brick != null)
                 {
+                    brick.localScale = Vector3.one;
                     brick.SetParent(brickHolder);
                     brick.position = transform.position;
                     isTouched = true;
