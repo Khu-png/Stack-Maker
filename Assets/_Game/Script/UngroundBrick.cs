@@ -20,6 +20,11 @@ public class UnroundBrick : MonoBehaviour
                     brickHolder.SetActive(true);
                 }
             }
+            BoxCollider box = GetComponent<BoxCollider>();
+            if (box != null)
+            {
+                box.enabled = false;
+            }
         }
     }
 }

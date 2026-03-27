@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3004715980541007355}
   - component: {fileID: 2206095074137368234}
   - component: {fileID: 3176165020780359926}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Surface
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ GameObject:
   - component: {fileID: 6895133179715169078}
   - component: {fileID: -3837398710040410217}
   - component: {fileID: 3111326310553868907}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ground Node
   m_TagString: GroundBrick
   m_Icon: {fileID: 0}
@@ -171,7 +171,7 @@ GameObject:
   - component: {fileID: 5837420382528725338}
   - component: {fileID: 715452622638209573}
   - component: {fileID: 7298458251680701918}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Node Pad
   m_TagString: Untagged
   m_Icon: {fileID: 0}

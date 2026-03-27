@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3278695487434222456}
   - component: {fileID: -7900199558541697531}
   - component: {fileID: 5542953195809417334}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Unground Node
   m_TagString: UnGroundBrick
   m_Icon: {fileID: 0}
@@ -54,8 +54,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 2, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 2.9354877, z: 1}
+  m_Center: {x: 0, y: 0.4677446, z: 0}
 --- !u!114 &5542953195809417334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81,7 +81,7 @@ GameObject:
   - component: {fileID: 3430007027915293261}
   - component: {fileID: 1230306295119206013}
   - component: {fileID: 8381447261398592333}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Node Pad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -171,7 +171,7 @@ GameObject:
   - component: {fileID: 4250631274730890465}
   - component: {fileID: 7903036587472996899}
   - component: {fileID: 3145538276457233628}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Unground Node
   m_TagString: Untagged
   m_Icon: {fileID: 0}
