@@ -2,8 +2,9 @@ using UnityEngine;
 
 public class GroundBrick : MonoBehaviour
 {
-    [SerializeField] private float height = 0.5f;
+    [SerializeField] private float height = 0.1f;
     private bool isTouched = false;
+    [SerializeField] private GameObject nodePad;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -14,10 +15,13 @@ public class GroundBrick : MonoBehaviour
             Player player = other.GetComponent<Player>();
             if (player != null)
             {
-                // Lấy cube con
                 Transform brick = transform.GetChild(0);
-
-                player.AddBrick(brick, height);
+                player.AddBrick(height);
+                
+                if (nodePad != null)
+                {
+                    nodePad.SetActive(false);
+                }
             }
         }
     }

@@ -213,6 +213,7 @@ MonoBehaviour:
   rb: {fileID: 2036922218381809993}
   speed: 1
   model: {fileID: 7181518557687220792}
-  nextBrickY: 0.5
+  nextBrickY: 0.1
+  playerNodePrefab: {fileID: 6977398764070492947, guid: b2d2c77218ce17c4b90558546892ef1f, type: 3}
   direction: {x: 0, y: 0, z: 0}
   isMoving: 0

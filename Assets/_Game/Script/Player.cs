@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private Transform  model;
     [SerializeField] private float nextBrickY;
+    [SerializeField] private GameObject playerNodePrefab;
     
     private Vector3 startPosition;
     public Vector3 direction;
@@ -83,23 +84,21 @@ public class Player : MonoBehaviour
         }
     }
 
-    public void AddBrick(Transform brick, float height)
+    public void AddBrick(float height)
     {
-        brick.SetParent(model);
+        GameObject newNode = Instantiate(playerNodePrefab, model);
         
-        brick.localRotation = Quaternion.identity;
+        newNode.transform.localRotation = Quaternion.identity;
         
-        brick.localPosition = new Vector3(0, nextBrickY - 1.7f, 0);
-
-        brick.localScale = Vector3.one;
+        newNode.transform.localPosition = new Vector3(0, nextBrickY - 0.8f, 0);
         
-        bricks.Add(brick);
+        bricks.Add(newNode.transform);
         
         nextBrickY -= height;
         
-        Vector3 position = model.transform.position;
-        position.y += height;
-        model.transform.position = position;
+        Vector3 pos = model.position;
+        pos.y += height;
+        model.position = pos;
     }
 
     public Transform RemoveBrick(float height)
