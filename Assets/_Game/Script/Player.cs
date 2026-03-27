@@ -101,23 +101,24 @@ public class Player : MonoBehaviour
         model.position = pos;
     }
 
-    public Transform RemoveBrick(float height)
+    public void RemoveBrick(float height)
     {
         if (bricks.Count == 0)
         {
-            return null;
+            Debug.Log("Ban da thua");
+            return;
         }
-        
+
         Transform lastBrick = bricks[bricks.Count - 1];
         bricks.RemoveAt(bricks.Count - 1);
-        
-        nextBrickY -= height;
-        
+
+        Destroy(lastBrick.gameObject); 
+
+        nextBrickY += height; 
+
         Vector3 position = model.transform.position;
         position.y -= height;
         model.transform.position = position;
-
-        return lastBrick;
     }
 }
 

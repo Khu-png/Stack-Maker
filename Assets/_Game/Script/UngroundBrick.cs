@@ -3,7 +3,7 @@ using UnityEngine;
 public class UnroundBrick : MonoBehaviour
 {
     [SerializeField] private float height = 0.5f;
-    [SerializeField] private Transform brickHolder;
+    [SerializeField] private GameObject brickHolder;
     private bool isTouched = false;
 
     private void OnTriggerEnter(Collider other)
@@ -13,14 +13,11 @@ public class UnroundBrick : MonoBehaviour
             Player player = other.GetComponent<Player>();
             if (player != null)
             {
-                Transform brick = player.RemoveBrick(height);
+                player.RemoveBrick(height);
 
-                if (brick != null)
+                if (brickHolder != null)
                 {
-                    brick.localScale = Vector3.one;
-                    brick.SetParent(brickHolder);
-                    brick.position = transform.position;
-                    isTouched = true;
+                    brickHolder.SetActive(true);
                 }
             }
         }

@@ -15,7 +15,6 @@ public class GroundBrick : MonoBehaviour
             Player player = other.GetComponent<Player>();
             if (player != null)
             {
-                Transform brick = transform.GetChild(0);
                 player.AddBrick(height);
                 
                 if (nodePad != null)

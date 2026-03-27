@@ -3,15 +3,17 @@ using UnityEngine;
 public class Reflect : MonoBehaviour
 {
     [SerializeField] private Transform model;
-    
+    [SerializeField] private GameObject nodePad;
+
+    [SerializeField] private float height;
     private void OnTriggerEnter(Collider other)
     {
         Player player = other.GetComponent<Player>();
-        if (player != null || player.isMoving)
+        if (player != null && player.isMoving)
         {
+            Debug.Log("Before: " + player.direction);
             float y = model.eulerAngles.y;
             int rot = Mathf.RoundToInt(y / 90f) * 90 % 360;
-
             if (rot == 0)
             {
                 if (player.direction == Vector3.back)
@@ -56,6 +58,9 @@ public class Reflect : MonoBehaviour
                     player.direction = Vector3.back;
                 }
             }
+            Debug.Log("After: " + player.direction);
+            player.AddBrick(height);
+            
             player.transform.rotation = Quaternion.LookRotation(player.direction);
         }   
     }

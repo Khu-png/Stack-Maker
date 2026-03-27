@@ -68,8 +68,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40b47ba802dbc334d901da3a563a7dfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UnroundBrick
-  height: 0.5
-  brickHolder: {fileID: 0}
+  height: 0.05
+  brickHolder: {fileID: 1666800967089178351}
 --- !u!1 &1666800967089178351
 GameObject:
   m_ObjectHideFlags: 0

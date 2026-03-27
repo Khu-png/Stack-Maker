@@ -280,8 +280,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2081025903260765367}
   - component: {fileID: 4723227015248441422}
-  - component: {fileID: 7638325275127429304}
-  - component: {fileID: 1568682658748215546}
+  - component: {fileID: 9067196045783721099}
   m_Layer: 0
   m_Name: Push Node
   m_TagString: Untagged
@@ -328,7 +327,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7638325275127429304
+--- !u!114 &9067196045783721099
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -337,32 +336,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 7110366855705850619}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91aa2e2c1a59d944b89e190dd5c3a500, type: 3}
+  m_Script: {fileID: 11500000, guid: ea8f91c257cecfc4e940b4cd713678e8, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PushNode
-  animator: {fileID: 1568682658748215546}
+  m_EditorClassIdentifier: Assembly-CSharp::Reflect
+  model: {fileID: 3440842177066643586}
   nodePad: {fileID: 3962964984716827358}
-  direction: {x: 0, y: 0, z: 0}
-  playerDirection: {x: 0, y: 0, z: 0}
---- !u!95 &1568682658748215546
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7110366855705850619}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: dfdadc4d3f2b647439845fc71c9c4f3b, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  height: 0.05
