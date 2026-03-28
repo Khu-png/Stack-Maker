@@ -14,6 +14,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/_Game/Script/Event/Win.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@7327e77c1cc2/Editor/2D/Overrides/MeshEditor2DURP.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -96,6 +97,8 @@
       <workItem from="1774621798283" duration="6414000" />
       <workItem from="1774630950153" duration="8000" />
       <workItem from="1774630963444" duration="1625000" />
+      <workItem from="1774715647681" duration="1682000" />
+      <workItem from="1774718101642" duration="1059000" />
     </task>
     <servers />
   </component>
