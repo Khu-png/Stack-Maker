@@ -152,19 +152,20 @@ public class Player : MonoBehaviour
         newBrick.transform.localRotation = Quaternion.identity;
         newBrick.transform.localPosition = new Vector3(0, nextBrickY - 0.8f, 0);
         bricks.Add(newBrick.transform);
-
         nextBrickY -= height;
 
         Vector3 pos = model.position;
         pos.y += height;
         model.position = pos;
+        
+        GameManager.Instance.AddBrick(1);
     }
 
     public void RemoveBrick(float height)
     {
-        if (bricks.Count == 0)
+        if (bricks.Count <= 0)
         {
-            Debug.Log("Ban da thua");
+            GameManager.Instance.GameLose();
             return;
         }
 
