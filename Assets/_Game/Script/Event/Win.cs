@@ -7,17 +7,23 @@ public class Win : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Rigidbody rb = other.GetComponent<Rigidbody>();
+
             if (rb != null)
             {
-                rb.linearVelocity = Vector3.zero;
-                rb.isKinematic = true; 
+                rb.isKinematic = true;
             }
-            
+
             Invoke(nameof(CallWin), 0.1f);
         }
     }
+
     private void CallWin()
     {
-        GameManager.Instance.GameWin();
+        GameManager gm = FindFirstObjectByType<GameManager>();
+
+        if (gm != null)
+        {
+            gm.GameWin();
+        }
     }
 }

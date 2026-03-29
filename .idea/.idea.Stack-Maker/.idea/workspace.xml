@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7333e14d-9344-4633-9462-74a24324253f" name="Changes" comment="" />
+    <list default="true" id="7333e14d-9344-4633-9462-74a24324253f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Stack-Maker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Stack-Maker/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Game/Script/Event/BrickCountUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Game/Script/Event/BrickCountUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Game/Script/Event/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Game/Script/Event/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Game/Script/Event/Win.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Game/Script/Event/Win.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Game/Script/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Game/Script/Player/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,7 +56,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.3.9f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.3.12f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath D:\Coding\Stack-Maker -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="D:\Coding\Stack-Maker" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -54,7 +66,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.3.9f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.3.12f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath D:\Coding\Stack-Maker -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="D:\Coding\Stack-Maker" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -101,6 +113,11 @@
       <workItem from="1774718101642" duration="1059000" />
       <workItem from="1774753920114" duration="869000" />
       <workItem from="1774754943460" duration="3146000" />
+      <workItem from="1774778231260" duration="181000" />
+      <workItem from="1774778470805" duration="74000" />
+      <workItem from="1774784015550" duration="463000" />
+      <workItem from="1774788356113" duration="359000" />
+      <workItem from="1774789049796" duration="313000" />
     </task>
     <servers />
   </component>

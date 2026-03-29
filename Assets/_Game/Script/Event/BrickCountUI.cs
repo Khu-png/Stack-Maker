@@ -7,6 +7,6 @@ public class BrickCountUI : MonoBehaviour
 
     void Update()
     {
-        brickText.text = GameManager.Instance.totalBricks.ToString();
+        brickText.text = GameManager.totalBricks.ToString();
     }
 }

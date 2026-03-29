@@ -158,14 +158,18 @@ public class Player : MonoBehaviour
         pos.y += height;
         model.position = pos;
         
-        GameManager.Instance.AddBrick(1);
+        GameManager gm = FindFirstObjectByType<GameManager>();
+        if (gm != null)
+            gm.AddBrick(1);
     }
 
     public void RemoveBrick(float height)
     {
         if (bricks.Count <= 0)
         {
-            GameManager.Instance.GameLose();
+            GameManager gm = FindFirstObjectByType<GameManager>();
+            if (gm != null)
+                gm.GameLose();
             return;
         }
 
