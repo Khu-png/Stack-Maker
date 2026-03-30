@@ -7,12 +7,13 @@ public class Win : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Rigidbody rb = other.GetComponent<Rigidbody>();
-
+            Player player = other.GetComponent<Player>();
             if (rb != null)
             {
                 rb.isKinematic = true;
             }
 
+            player.ClearBrick();
             Invoke(nameof(CallWin), 0.1f);
         }
     }

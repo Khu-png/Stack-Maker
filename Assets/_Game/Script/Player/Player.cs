@@ -183,6 +183,25 @@ public class Player : MonoBehaviour
         pos.y -= height;
         model.position = pos;
     }
+
+    public void ClearBrick()
+    {
+        if (bricks.Count > 0)
+        {
+            foreach (Transform brick in bricks)
+            {
+                Destroy(brick.gameObject);
+            }
+
+            bricks.Clear();
+            
+            nextBrickY = 0;
+
+            Vector3 pos = model.position;
+            pos.y = 0;
+            model.position = pos;
+        }
+    }
     
     Vector3 MoveDirectionToVector(MoveDirection dir)
     {
