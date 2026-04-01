@@ -10,6 +10,7 @@ public class LevelManager : Singleton<LevelManager>
 
     private GameObject playerInstance;
     private GameObject currentLevel;
+    public int CurrentLevel => level;
     private int level = 0;
 
     private void Start()
@@ -46,6 +47,8 @@ public class LevelManager : Singleton<LevelManager>
     {
         level++;
         if (level >= levels.Count) level = 0;
+        
+        UIManager.Instance.UpdateLevelText(level + 1);
 
         PlayerPrefs.SetInt("Level", level);
         PlayerPrefs.Save();
@@ -58,7 +61,6 @@ public class LevelManager : Singleton<LevelManager>
         Despawn();
         LoadLevel(level);
         OnInit();
-        UIManager.Instance.UpdateLevelText();
     }
 
     private void Despawn()
@@ -78,4 +80,18 @@ public class LevelManager : Singleton<LevelManager>
 
     public void OnWin() => GameManager.Instance.GameWin();
     public void OnLose() => GameManager.Instance.GameLose();
+    
+    
+    // hàm chỉ dùng cho testing
+    public void ResetLevelState()
+    {
+        level = 0;
+        Despawn();
+        LoadLevel(level);
+        OnInit();
+        if (cameraFollow != null && playerInstance != null)
+            cameraFollow.SetTarget(playerInstance.transform);
+        UIManager.Instance.UpdateLevelText(level + 1);
+        UIManager.Instance.ResetUI();
+    }
 }

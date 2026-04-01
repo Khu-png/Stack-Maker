@@ -4,7 +4,7 @@ public class CameraFollow : MonoBehaviour
 {
     [SerializeField] private Transform target;
     public Vector3 offset;
-    public float speed = 20;
+    public float speed = 10f;
 
     public void SetTarget(Transform newTarget)
     {
@@ -14,11 +14,10 @@ public class CameraFollow : MonoBehaviour
     void LateUpdate()
     {
         if (target == null) return;
-
         transform.position = Vector3.Lerp(
             transform.position,
             target.position + offset,
-            Time.unscaledDeltaTime * speed 
+            Time.unscaledDeltaTime * speed
         );
     }
 }
