@@ -5,18 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7333e14d-9344-4633-9462-74a24324253f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/_Game/Script/Singletion/Singleton.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Game/Script/Singletion/Singleton.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Stack-Maker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Stack-Maker/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Game/Scenes/Lvl 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Game/Scenes/Lvl 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Game/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Game/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Game/Scenes/LVl 5.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Game/Scenes/LVl 5.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Game/Scenes/Lvl 1.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Game/Scenes/Lvl 1.unity.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Game/Scenes/Lvl 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Game/Scenes/Lvl 2.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Game/Scenes/Lvl 3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Game/Scenes/Lvl 3.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Game/Scenes/Lvl 4.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Game/Scenes/Lvl 4.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Game/Scenes/Main Game.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Game/Scenes/Main Game.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Game/Script/Event/Win.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Game/Script/Event/Win.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Game/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Game/Scenes/Menu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Game/Script/Camera/CameraFollow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Game/Script/Camera/CameraFollow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Game/Script/Core.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Game/Script/Core/GroundBrick.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Game/Script/Core/GroundBrick.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Game/Script/Core/Reflect.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Game/Script/Core/Reflect.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Game/Script/Core/UngroundBrick.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Game/Script/Core/UngroundBrick.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Game/Script/Event.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Game/Script/Event/BrickCountUI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Game/Script/Event/BrickCountUI.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Game/Script/Event/GameManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Game/Script/Event/GameManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Game/Script/Event/Menu.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Game/Script/Event/Menu.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Game/Script/Event/Win.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Game/Script/Event/Win.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Game/Script/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Game/Script/Player/Player.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +47,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/_Game/Script/Event/Win.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@7327e77c1cc2/Editor/2D/Overrides/MeshEditor2DURP.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Game/Script/Manage/LevelManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Game/Script/Singletion/Singleton.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -120,7 +140,12 @@
       <workItem from="1774788356113" duration="359000" />
       <workItem from="1774789049796" duration="1793000" />
       <workItem from="1774849430051" duration="1246000" />
-      <workItem from="1774855206454" duration="1517000" />
+      <workItem from="1774855206454" duration="1768000" />
+      <workItem from="1774950462244" duration="2722000" />
+      <workItem from="1774964485903" duration="11625000" />
+      <workItem from="1775024787492" duration="6060000" />
+      <workItem from="1775032951589" duration="7030000" />
+      <workItem from="1775051694782" duration="10366000" />
     </task>
     <servers />
   </component>

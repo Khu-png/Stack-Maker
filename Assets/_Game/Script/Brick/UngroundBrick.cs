@@ -13,6 +13,8 @@ public class UnroundBrick : MonoBehaviour
             Player player = other.GetComponent<Player>();
             if (player != null)
             {
+                isTouched = true;
+                
                 player.RemoveBrick(height);
 
                 if (brickHolder != null)

@@ -10,11 +10,11 @@ public class GroundBrick : MonoBehaviour
     {
         if (!isTouched && other.CompareTag("Player"))
         {
-            isTouched = true;
 
             Player player = other.GetComponent<Player>();
             if (player != null)
             {
+                isTouched = true;
                 player.AddBrick(height);
                 
                 if (nodePad != null)

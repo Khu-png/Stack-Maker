@@ -141,7 +141,7 @@ Transform:
   m_GameObject: {fileID: 8797718885169176943}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.53206, y: 0.1510184, z: 0.14048}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -210,10 +210,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44e5c841ef4afab458185d8bafa05d9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
-  rb: {fileID: 2036922218381809993}
-  speed: 1
+  speed: 10
+  brickLayer:
+    serializedVersion: 2
+    m_Bits: 64
   model: {fileID: 7181518557687220792}
   nextBrickY: 0.1
-  playerNodePrefab: {fileID: 6977398764070492947, guid: b2d2c77218ce17c4b90558546892ef1f, type: 3}
-  direction: {x: 0, y: 0, z: 0}
+  playerBrickPrefab: {fileID: 6977398764070492947, guid: b2d2c77218ce17c4b90558546892ef1f, type: 3}
+  direction: 0
   isMoving: 0

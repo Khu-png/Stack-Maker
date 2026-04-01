@@ -20,11 +20,6 @@ public class Win : MonoBehaviour
 
     private void CallWin()
     {
-        GameManager gm = FindFirstObjectByType<GameManager>();
-
-        if (gm != null)
-        {
-            gm.GameWin();
-        }
+        LevelManager.Instance.OnWin();
     }
 }

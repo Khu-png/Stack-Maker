@@ -158,7 +158,7 @@ public class Player : MonoBehaviour
         pos.y += height;
         model.position = pos;
         
-        GameManager gm = FindFirstObjectByType<GameManager>();
+        UIManager gm = FindFirstObjectByType<UIManager>();
         if (gm != null)
             gm.AddBrick(1);
     }
